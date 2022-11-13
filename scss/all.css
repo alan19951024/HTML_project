@@ -193,6 +193,7 @@ table {
   font-weight: 600;
 }
 .lession table {
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
   border-spacing: 10;
@@ -206,12 +207,10 @@ table {
   color: rgb(36, 36, 36);
 }
 .lession table th, .lession table td {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid rgba(174, 174, 174, 0.3882352941);
   border-top: 1px solid rgba(174, 174, 174, 0.3882352941);
-  padding-right: 120px;
   text-align: left;
+  padding: 10px 120px 10px 10px;
 }
 .lession table .text-green {
   color: #00cc99;
