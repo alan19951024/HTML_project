@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.warp {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei;
+}
+
+.header {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header ul {
+  display: flex;
+  padding: 10px;
+}
+.header ul li a {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+.header ul li a img {
+  max-width: 16px;
+  max-height: 16px;
+  margin-right: 5px;
+}
+.header ul li a .fans {
+  color: #4460a0;
+  border-right: 1px solid #cccccc;
+  padding-right: 15px;
+}
+.header ul li a .follow {
+  color: #00aaec;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.menu h1 a {
+  background-image: url(../img/logo.png);
+  width: 173px;
+  height: 50px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  margin-left: 50px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #00cc99;
+  font-weight: 600;
+  padding: 5px;
+  background-image: linear-gradient(transparent calc(100% - 2px), #00cc99 2px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+}
+.menu ul li a:hover {
+  background-color: rgba(246, 246, 246, 0.8862745098);
+  border-radius: 3px;
+  background-size: 100% 100%;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner .title {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  color: white;
+  font-size: 36px;
+  line-height: 1.5;
+  padding: 20px 0px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+.content ul {
+  display: flex;
+  padding: 60px 15px;
+  justify-content: space-around;
+}
+.content ul li {
+  width: 30%;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.072);
+  padding: 20px 15px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.content ul li img {
+  width: 100%;
+}
+.content ul li h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+.content ul li p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 10px;
+  text-align: justify;
+}
+.content ul li:hover {
+  box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.158);
+  border: 1px solid rgba(174, 174, 174, 0.3882352941);
+}
+
+.lession {
+  margin-bottom: 55px;
+}
+.lession h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+.lession table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 10;
+}
+.lession table tr:hover {
+  background-color: rgba(224, 224, 224, 0.295);
+}
+.lession table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: rgb(36, 36, 36);
+}
+.lession table th, .lession table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(174, 174, 174, 0.3882352941);
+  border-top: 1px solid rgba(174, 174, 174, 0.3882352941);
+  padding-right: 120px;
+  text-align: left;
+}
+.lession table .text-green {
+  color: #00cc99;
+  font-weight: 600;
+}
+
+.webform {
+  background: -webkit-linear-gradient(top, #00644b, #009771);
+  padding: 20px 20px;
+}
+.webform h2 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 15px 0;
+  font-weight: 600;
+}
+.webform form {
+  display: flex;
+  justify-content: space-between;
+}
+.webform form .comment {
+  width: 100%;
+}
+.webform form .comment textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+  border-radius: 5px;
+  border: 2px solid rgba(174, 174, 174, 0.3882352941);
+  overflow: hidden;
+  outline: none;
+}
+.webform form .information {
+  width: 100%;
+  padding-left: 35px;
+}
+.webform form .information label {
+  color: white;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.webform form .information input[type=text] {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 0;
+  font-size: 16px;
+  height: 30px;
+  border: 1px solid rgba(174, 174, 174, 0.3882352941);
+  outline: none;
+}
+.webform form .information input[type=submit] {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 20px;
+  background-color: #00cc99;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+}
+.webform form .information input[type=submit]:hover {
+  transform: scale(1.1);
+  background-color: #00644b;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 50px 20px;
+}
+.footer img {
+  width: 171px;
+  height: 36px;
+}
+.footer .contact li {
+  font-size: 14px;
+}
+.footer .contact li a {
+  color: #e55995;
+  text-decoration: none;
+}
+.footer .contact li:nth-child(2) {
+  padding-top: 10px;
+}/*# sourceMappingURL=all.css.map */
